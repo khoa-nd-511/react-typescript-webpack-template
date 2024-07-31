@@ -10,7 +10,7 @@
         "dev-webpack": "webpack serve --config webpack/webpack.config.js --env env=dev",
         "dev-css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
         "lint": "",
-        "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,mjs,json,md}\""
+        "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,mjs,json,md,css,scss}\""
     },
     "keywords": [],
     "author": "",
@@ -22,6 +22,7 @@
         "@babel/preset-typescript": "^7.24.7",
         "@eslint/compat": "^1.1.1",
         "@eslint/js": "^9.8.0",
+        "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
         "@types/prettier": "^3.0.0",
         "@types/react": "^18.3.3",
         "@types/react-dom": "^18.3.0",

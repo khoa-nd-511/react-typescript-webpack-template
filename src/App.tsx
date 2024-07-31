@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-
 const App = () => {
-    const [state] = useState();
-    useEffect(() => {
-        console.log(state);
-    }, []);
-    return <div className="text-6xl font-bold underline">App</div>;
+    return (
+        <div className="w-full min-h-screen flex">
+            <div className="mx-auto mt-10">
+                <h1 className="text-6xl font-bold text-blue-500">Interview</h1>
+            </div>
+        </div>
+    );
 };
 
 export default App;
