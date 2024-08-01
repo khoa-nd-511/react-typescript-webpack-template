@@ -9,8 +9,8 @@
         "dev": "concurrently \"yarn:dev-*\"",
         "dev-webpack": "webpack serve --config webpack/webpack.config.js --env env=dev",
         "dev-css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-        "lint": "",
-        "format": "prettier --config .prettierrc.js --write \"./**/*.{js,jsx,ts,tsx,mjs,json,md,css,scss}\""
+        "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,mjs,json,md,css,scss}\"",
+        "format": "prettier --write ."
     },
     "keywords": [],
     "author": "",
@@ -38,6 +38,7 @@
         "eslint-plugin-react-hooks": "^4.6.2",
         "globals": "^15.8.0",
         "html-webpack-plugin": "^5.6.0",
+        "husky": "^9.1.4",
         "mini-css-extract-plugin": "^2.9.0",
         "postcss": "^8.4.40",
         "prettier": "^3.3.3",
