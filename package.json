@@ -10,7 +10,8 @@
         "dev-webpack": "webpack serve --config webpack/webpack.config.js --env env=dev",
         "dev-css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
         "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,mjs,json,md,css,scss}\"",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "prepare": "husky"
     },
     "keywords": [],
     "author": "",
