@@ -65,9 +65,7 @@
         "tailwindcss-animate": "^1.0.7"
     },
     "lint-staged": {
-        "*": [
-            "yarn lint",
-            "yarn format"
-        ]
+        "*.{js,jsx,ts,tsx,json}": "yarn lint",
+        "*": "yarn format"
     }
 }
