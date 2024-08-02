@@ -619,6 +619,10 @@ body {
     margin-top: 2.5rem;
 }
 
+.mt-5 {
+    margin-top: 1.25rem;
+}
+
 .flex {
     display: flex;
 }
@@ -651,20 +655,12 @@ body {
     width: 100%;
 }
 
-.flex-col {
-    flex-direction: column;
-}
-
 .items-center {
     align-items: center;
 }
 
 .justify-center {
     justify-content: center;
-}
-
-.gap-2 {
-    gap: 0.5rem;
 }
 
 .whitespace-nowrap {

@@ -8,7 +8,9 @@ const App = () => {
         <div className="w-full min-h-screen flex">
             <div className="mx-auto mt-10">
                 <h1 className="text-6xl font-bold text-blue-500">Interview</h1>
-                <Button variant="outline">Click me</Button>
+                <Button variant="outline" className="mt-5">
+                    Click me
+                </Button>
             </div>
         </div>
     );
