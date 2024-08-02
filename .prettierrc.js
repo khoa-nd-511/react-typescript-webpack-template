@@ -6,7 +6,10 @@ module.exports = {
     endOfLine: "auto",
 
     // Sorting rules
-    plugins: ["@ianvs/prettier-plugin-sort-imports"],
+    plugins: [
+        "@ianvs/prettier-plugin-sort-imports",
+        "prettier-plugin-organize-imports",
+    ],
     importOrder: [
         "<BUILTIN_MODULES>",
         "<THIRD_PARTY_MODULES>",
