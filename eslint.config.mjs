@@ -43,6 +43,6 @@ export default [
     },
 
     {
-        ignores: ["node_modules/*", "src/components/ui/**/*"],
+        ignores: ["node_modules/*", "build/*", "src/components/ui/**/*"],
     },
 ];

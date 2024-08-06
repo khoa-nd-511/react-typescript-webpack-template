@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: path.resolve(__dirname, "..", "./src/index.tsx"),
@@ -25,17 +24,9 @@ module.exports = {
                 exclude: /node_modules/,
                 use: "babel-loader",
             },
-            {
-                test: /\.css$/,
-                exclude: /node_modules/,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
-            },
         ],
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: "output.css",
-        }),
         new HTMLWebpackPlugin({
             template: path.resolve(__dirname, "..", "./src/index.html"),
         }),
