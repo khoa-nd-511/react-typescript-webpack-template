@@ -3,16 +3,22 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const App = () => {
-    useState();
+    const [count, setCount] = useState(0);
     return (
-        <div className="w-full min-h-screen flex">
-            <div className="mx-auto mt-10">
-                <h1 className="text-6xl font-bold text-blue-500">Interview</h1>
-                <Button variant="outline" className="mt-5">
-                    Click me
+        <main className="w-full min-h-screen flex">
+            <section className="mx-auto mt-10">
+                <h1 className="text-6xl font-bold text-blue-500">
+                    Hello World
+                </h1>
+                <Button
+                    variant="outline"
+                    className="mt-5"
+                    onClick={() => setCount((c) => c + 1)}
+                >
+                    Click me: {count}
                 </Button>
-            </div>
-        </div>
+            </section>
+        </main>
     );
 };
 
