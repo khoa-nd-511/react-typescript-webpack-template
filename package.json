@@ -12,8 +12,9 @@
         "lint": "eslint --fix .",
         "format": "prettier --write .",
         "prepare": "husky",
-        "test": "jest",
-        "test:watch": "jest --watch"
+        "test": "jest --config jest.coverage.config.ts",
+        "test:watch": "jest --config jest.coverage.config.ts --watch",
+        "test:report": "jest --config jest.coverage.config.ts"
     },
     "keywords": [],
     "author": "",
