@@ -19,7 +19,7 @@ const App = () => {
                     Click me: {count}
                 </Button>
 
-                <User id={10} />
+                <User id={1} />
             </section>
         </main>
     );
