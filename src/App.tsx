@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import User from "@/components/User";
 
 const App = () => {
     const [count, setCount] = useState(0);
@@ -17,6 +18,8 @@ const App = () => {
                 >
                     Click me: {count}
                 </Button>
+
+                <User id={10} />
             </section>
         </main>
     );

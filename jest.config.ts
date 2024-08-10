@@ -138,7 +138,7 @@ const config: Config = {
     // runner: "jest-runner",
 
     // The paths to modules that run some code to configure or set up the testing environment before each test
-    // setupFiles: [],
+    setupFiles: ["<rootDir>/jest.polyfills.js"],
 
     // A list of paths to modules that run some code to configure or set up the testing framework before each test
     setupFilesAfterEnv: ["<rootDir>/src/test-setup.ts"],
@@ -150,10 +150,12 @@ const config: Config = {
     // snapshotSerializers: [],
 
     // The test environment that will be used for testing
-    testEnvironment: "jsdom",
+    testEnvironment: "jest-environment-jsdom",
 
     // Options that will be passed to the testEnvironment
-    // testEnvironmentOptions: {},
+    testEnvironmentOptions: {
+        customExportConditions: [""],
+    },
 
     // Adds a location field to test results
     // testLocationInResults: false,
